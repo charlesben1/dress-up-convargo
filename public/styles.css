@@ -36,7 +36,7 @@ input {
 	}
 
 
-.header{
+.header{                                        /*Ajout d'un titre a la page indiquant Convargo et le role de la page*/
 	margin: 20px 20px 0px 20px;
 	padding: 10px;
 	border: 5px solid #ccc;
@@ -140,7 +140,7 @@ vertical-align: right;
  content: "Option";
 }
 
-strong{
+strong{                      /* couleur speciale pour l'ecriture de "convargo" dans le titre*/
 color:#5995DA;
 }
 
