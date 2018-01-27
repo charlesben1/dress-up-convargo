@@ -1,0 +1,149 @@
+
+/* Creation d'un style "base" pour la page */
+body {
+	text-transform: capitalize;                        /* Passage en lettres capitales*/
+	                      
+	padding: 0px 0px 0px 0px;                        /* Ecart entre contenu et bordures*/
+	font-family: verdana, arial, sans-serif;         /* Choix de la police d'ecriture*/
+	color: #ccc;                                      /* Couleur du texte*/
+	background-color: #333;                          /* Couleur du fond*/
+	width: 900px;                                    /* Taille en pixels utilisée sur la page*/
+	font-size: 12px;
+	margin: 0 auto;   
+	line-height: 22px;
+	margin-top: 20px;                                /* Position sur la page */
+	margin-bottom: 10px;                               
+	}
+
+
+/* Tailles d'ecritures et positions pour les données a remplir et les resultats de la console*/
+
+script {
+	font-size: 24px;                
+	line-height: 44px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+input {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+
+/* Définitions specifiques aux deux blocks #trucker et #shipper pour les placer sur l'ecran et les rendre visuellement agréables*/
+
+#trucker {                       
+	float: left;
+	padding: 10px 2% 10px 2%;
+	margin: 20px 1% 20px 2%;
+	background: #666;
+	border: 5px solid #ccc;
+	width: 41%;
+	}
+
+#shipper {
+	float: right;
+	padding: 10px 2% 10px 2%;
+	margin: 20px 2% 20px 1%;
+	background: #666;
+	border: 5px solid #ccc;
+	width: 41%;
+	}
+
+
+body {
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 20px;
+	margin-bottom: 10px; 
+
+	}
+  /* Definitions sur le bouton #compute, couleur d'ecriture et de fond, taille, placement */              
+#compute {             
+  display: block;             
+  text-decoration: none;      
+
+  color: #FFF;                
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+#compute {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #5995DA;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+/*Changement de couleur quand on passe la souris sur le bouton*/
+#compute:hover {background-color: #4682B4}
+
+/* ...quand on clique*/
+#compute:active {
+  background-color: #4682B4;
+  box-shadow: 0 5px #666;
+  
+}
+
+/*Caracteristiques de la box contenant les resultats des requetes js*/
+#actors {
+
+	float: bottom;
+	text-align: center;
+	padding: 10px 2% 10px 2%;
+	margin: 20px 2% 20px 1%;
+	background: #666;
+	border: 5px solid #ccc;
+	width: auto;
+	}
+
+/* Lignes servant a ajouter du texte sur la page depuis le .CSS, "Option" a côté du bouton correspondant en l'occurence*/
+	.option:after{
+color: #FFFAF0;
+font-size: 80%;
+vertical-align: right;
+ content: "Option";
+}
+
+/*@media sert a definir des conditions dans le CSS pour le rendre plus reactif et adaptable aux differentes tailles d'ecran par exemple*/
+@media all and (max-width: 800px) 
+{
+    body
+    {
+        width: auto;
+        text-align: left;
+    }                                        /*La on reactualise la taille du body ainsi que le layout general quand l'ecran est de taille inferieure à 800px */
+
+     #shipper, 
+     #trucker,
+     #compute
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+	
+
+
+	
+
