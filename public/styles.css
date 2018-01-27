@@ -1,12 +1,13 @@
 
 /* Creation d'un style "base" pour la page */
 body {
-	text-transform: capitalize;                        /* Passage en lettres capitales*/
-	                      
+
+	text-transform: capitalize;                        /* Passage en lettres capitales*/                      
 	padding: 0px 0px 0px 0px;                        /* Ecart entre contenu et bordures*/
 	font-family: verdana, arial, sans-serif;         /* Choix de la police d'ecriture*/
 	color: #ccc;                                      /* Couleur du texte*/
 	background-color: #333;                          /* Couleur du fond*/
+	background-image:url(docs/fondgris.jpg);
 	width: 900px;                                    /* Taille en pixels utilisée sur la page*/
 	font-size: 12px;
 	margin: 0 auto;   
@@ -26,7 +27,7 @@ script {
 	margin-bottom: 0;
 	}
 input {
-	text-transform: uppercase;
+	
 	font-size: 18px;
 	line-height: 40px;
 	font-weight: bold;
@@ -34,7 +35,24 @@ input {
 	margin-bottom: 0;
 	}
 
-/* Définitions specifiques aux deux blocks #trucker et #shipper pour les placer sur l'ecran et les rendre visuellement agréables*/
+
+.header{
+	margin: 20px 20px 0px 20px;
+	padding: 10px;
+	border: 5px solid #ccc;
+	background: #666;
+	height: 70px;
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 20px;
+	margin-bottom: 10px; 	
+	text-align: center;
+	text-transform: uppercase;
+	height: auto;
+	}
+
+
+
 
 #trucker {                       
 	float: left;
@@ -122,6 +140,10 @@ vertical-align: right;
  content: "Option";
 }
 
+strong{
+color:#5995DA;
+}
+
 /*@media sert a definir des conditions dans le CSS pour le rendre plus reactif et adaptable aux differentes tailles d'ecran par exemple*/
 @media all and (max-width: 800px) 
 {
@@ -130,14 +152,16 @@ vertical-align: right;
         width: auto;
         text-align: left;
     }                                        /*La on reactualise la taille du body ainsi que le layout general quand l'ecran est de taille inferieure à 800px */
-
+     
      #shipper, 
      #trucker,
      #compute
     {
         width: auto;
+        height: auto;
         margin-bottom: 15px;
     }
+
 
 }
 
